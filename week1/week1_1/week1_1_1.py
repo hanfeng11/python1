@@ -1,0 +1,19 @@
+var1=input("请输入手机号码:")
+str=[185,175,145,155,186]
+try:
+    int(var1)
+    if(len(var1)==11):
+        head=var1[0:3]
+        bool=False
+        for i in str:
+            if(int(head)==(i)):
+                bool=True
+                break
+        if(bool):
+            print("符合手机号码")
+        else:
+            print("不符合手机号码")
+    else:
+        print("输入的手机号码长度不够")
+except:
+    print("不得输入字母")
